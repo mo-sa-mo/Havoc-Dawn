@@ -1,0 +1,16 @@
+res://menu/menu.tscn
+res://menu/lose.gd
+res://menu/buttom style.tres
+res://menu/buttom pressed style.tres
+res://menu/pausemenu.gdshader
+res://pauseMenu/pause_menu.gdshader
+res://options.tscn
+res://menu/pausemenu.tscn
+res://player.tscn
+res://last_stand_game.tscn
+res://pine_tree.tscn
+res://mob.tscn
+res://gun.tscn
+res://bullet.tscn
+res://menu/lose.tscn
+res://smoke_explosion/smoke_explosion.tscn

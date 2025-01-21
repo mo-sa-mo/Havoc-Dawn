@@ -1,0 +1,59 @@
+[gd_scene load_steps=8 format=3 uid="uid://c66r6301i3r6p"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_3ixth"]
+[ext_resource type="PackedScene" uid="uid://pbmyh1qru7p" path="res://characters/happy_boo/happy_boo.tscn" id="1_gvb2h"]
+[ext_resource type="PackedScene" uid="uid://7hhv230ql35m" path="res://gun.tscn" id="3_r03ps"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o2e5c"]
+radius = 30.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_75pdm"]
+radius = 38.8973
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v1cv0"]
+bg_color = Color(0.184314, 0.156863, 0.180392, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fwlqx"]
+bg_color = Color(0.623529, 0.866667, 0.317647, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="player" type="CharacterBody2D"]
+script = ExtResource("1_3ixth")
+
+[node name="HappyBoo" parent="." instance=ExtResource("1_gvb2h")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_o2e5c")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Gun" parent="." instance=ExtResource("3_r03ps")]
+position = Vector2(0, -35)
+
+[node name="HurtBox" type="Area2D" parent="."]
+unique_name_in_owner = true
+collision_layer = 0
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtBox"]
+shape = SubResource("CircleShape2D_75pdm")
+debug_color = Color(0.760784, 0.403922, 0.54902, 0.419608)
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+offset_left = -74.0
+offset_top = -126.0
+offset_right = 75.0
+offset_bottom = -107.0
+theme_override_colors/font_color = Color(0.34902, 0.521569, 0.584314, 1)
+theme_override_styles/background = SubResource("StyleBoxFlat_v1cv0")
+theme_override_styles/fill = SubResource("StyleBoxFlat_fwlqx")
+value = 100.0
+show_percentage = false

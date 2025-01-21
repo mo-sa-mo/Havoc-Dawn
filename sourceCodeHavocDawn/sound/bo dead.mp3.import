@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://csohyyucqa2s1"
+path="res://.godot/imported/bo dead.mp3-8da7a1f6e640bab558ac6a5f5bae1858.mp3str"
+
+[deps]
+
+source_file="res://sound/bo dead.mp3"
+dest_files=["res://.godot/imported/bo dead.mp3-8da7a1f6e640bab558ac6a5f5bae1858.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

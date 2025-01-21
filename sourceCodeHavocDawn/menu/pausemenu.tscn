@@ -1,0 +1,71 @@
+[gd_scene load_steps=7 format=3 uid="uid://d22ilcgo04y6x"]
+
+[ext_resource type="Script" path="res://menu/pausemenu.gd" id="1_4we52"]
+[ext_resource type="Shader" path="res://menu/pausemenu.gdshader" id="2_r2m7u"]
+[ext_resource type="StyleBox" uid="uid://gbmtf4h7xkcx" path="res://menu/buttom style.tres" id="3_fwdub"]
+[ext_resource type="StyleBox" uid="uid://c5dbodpbg6gp4" path="res://menu/buttom pressed style.tres" id="4_mupqb"]
+[ext_resource type="AudioStream" uid="uid://c28cpj6f8px7y" path="res://sound/click hoveer.mp3" id="5_gjl58"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vxoni"]
+shader = ExtResource("2_r2m7u")
+shader_parameter/amount = 3.4
+
+[node name="Pausemenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_4we52")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_vxoni")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1784.0
+offset_bottom = -939.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.01
+anchor_top = -0.009
+anchor_right = -0.01
+anchor_bottom = -0.009
+offset_left = 19.2
+offset_top = 9.72
+offset_right = 155.2
+offset_bottom = 150.72
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="Resume" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = ExtResource("3_fwdub")
+theme_override_styles/pressed = ExtResource("3_fwdub")
+text = "Resume"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = ExtResource("4_mupqb")
+theme_override_styles/pressed = ExtResource("3_fwdub")
+text = "Quit"
+
+[node name="hoverr" type="AudioStreamPlayer" parent="MarginContainer/VBoxContainer"]
+stream = ExtResource("5_gjl58")
+bus = &"sfx"
+
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_mouse_entered"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_mouse_entered"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

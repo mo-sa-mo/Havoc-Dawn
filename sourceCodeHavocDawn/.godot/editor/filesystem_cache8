@@ -1,0 +1,185 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1733577535
+bullet.gd::GDScript::-1::1730557358::0::1::::<>Area2D<>::
+bullet.tscn::PackedScene::3096381807611538186::1733577131::0::1::::<><>::res://bullet.gd<>uid://dftkbqwsfd68r::::res://pistol/projectile.png
+default_bus_layout.tres::AudioBusLayout::6564268947468103023::1731270787::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1733576979::0::1::::<><>::
+GameUI.gd::GDScript::-1::1726614640::0::1::::<>Control<>::
+Global.gd::GDScript::-1::1726683950::0::1::::<>Node<>::
+gun.gd::GDScript::-1::1730557613::0::1::::<>Area2D<>::
+gun.tscn::PackedScene::2260957623859533040::1733577131::0::1::::<><>::uid://cswb5do8rrj7q::::res://pistol/pistol.png<>res://gun.gd<>uid://brtixdr7w7cng::::res://sound/gunshot.mp3
+icon.png::CompressedTexture2D::621515402784007901::1695668179::1707144106::1::::<><>::
+last_stand_game.gd::GDScript::-1::1725389177::0::1::::<>Node2D<>::
+last_stand_game.tscn::PackedScene::7165766285218932585::1733577131::0::1::::<><>::res://last_stand_game.gd<>uid://c66r6301i3r6p::::res://player.tscn<>uid://bq7a7wr1ycihb::::res://pine_tree.tscn<>uid://d22ilcgo04y6x::::res://menu/pausemenu.tscn<>res://GameUI.gd<>uid://gbmtf4h7xkcx::::res://menu/buttom style.tres
+menu.gd::GDScript::-1::1731846172::0::1::::<>Button<>::
+mob.gd::GDScript::-1::1730644358::0::1::::<>CharacterBody2D<>::
+mob.tscn::PackedScene::661918639577514957::1733577131::0::1::::<><>::uid://ogik4s70pgwl::::res://characters/slime/slime.tscn<>res://mob.gd
+options.tres.gd::GDScript::-1::1731273193::0::1::::<>Control<>::
+options.tscn::PackedScene::474569737475699112::1733577131::0::1::::<><>::uid://ceqyck4rufbob::::res://menu/2.jpg<>res://options.tres.gd<>uid://btstv31s0b6pi::::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/kirifont/KiriFont.otf<>uid://c5dbodpbg6gp4::::res://menu/buttom pressed style.tres<>res://volum slider.gd<>uid://c28cpj6f8px7y::::res://sound/click hoveer.mp3<>uid://gbmtf4h7xkcx::::res://menu/buttom style.tres
+pine_tree.tscn::PackedScene::3575560598425348127::1733577131::0::1::::<><>::uid://b7rhtttevhxtj::::res://characters/ground_shadow.png<>uid://caqfk2xng5v5u::::res://trees/pine_tree.png
+player.gd::GDScript::-1::1732113826::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::7013780289496188113::1733577131::0::1::::<><>::res://player.gd<>uid://pbmyh1qru7p::::res://characters/happy_boo/happy_boo.tscn<>uid://7hhv230ql35m::::res://gun.tscn
+volum slider.gd::GDScript::-1::1731273355::0::1::::<>HSlider<>::
+::res://addons/::1733577224
+::res://addons/colorpicker_presets/::1733577224
+colorpicker_presets.gd::GDScript::-1::1695668179::0::1::::<>EditorPlugin<>::
+plugin.cfg::TextFile::-1::1695668179::0::1::::<><>::
+README.md::TextFile::-1::1695668179::0::1::::<><>::
+::res://characters/::1733577224
+ground_shadow.png::CompressedTexture2D::4668018078467755571::1695668179::1707144106::1::::<><>::
+::res://characters/happy_boo/::1733577224
+happy_boo.gd::GDScript::-1::1695668179::0::1::::<>Node2D<>::
+happy_boo.tscn::PackedScene::31049085407951015::1695668179::0::1::::<><>::res://characters/happy_boo/happy_boo.gd<>uid://b7rhtttevhxtj::::res://characters/ground_shadow.png<>uid://ng8e5ot0dtpd::::res://characters/happy_boo/square_foot.png<>uid://dhapxq8y8ow57::::res://characters/happy_boo/square_lower_leg.png<>uid://qmqpm6asge1i::::res://characters/happy_boo/square_upper_leg.png<>uid://cksiu5gst6fmp::::res://characters/happy_boo/square_body.png<>uid://cvs0lh814pk7h::::res://characters/happy_boo/square_face.png
+square_body.png::CompressedTexture2D::5512411640973615011::1695668179::1707144106::1::::<><>::
+square_face.png::CompressedTexture2D::6285503871772747319::1695668179::1707144106::1::::<><>::
+square_foot.png::CompressedTexture2D::926853635980280533::1695668179::1707144106::1::::<><>::
+square_lower_leg.png::CompressedTexture2D::7651536677184113460::1695668179::1707144106::1::::<><>::
+square_modification_stack.tres::SkeletonModificationStack2D::8504717324922621560::1695668179::0::1::::<><>::
+square_ref.png::CompressedTexture2D::4290601870950781964::1695668179::1707144106::1::::<><>::
+square_upper_leg.png::CompressedTexture2D::1148792968243506332::1695668179::1707144106::1::::<><>::
+::res://characters/slime/::1733577224
+slime.gd::GDScript::-1::1695668179::0::1::::<>Node2D<>::
+slime.tscn::PackedScene::995535223809565591::1695668179::0::1::::<><>::uid://dvgfmy6vtvjji::::res://characters/slime/slime_body.png<>res://characters/slime/slime.gd<>uid://b7rhtttevhxtj::::res://characters/ground_shadow.png<>uid://c078jrp2yvc4s::::res://characters/slime/slime_face.png<>uid://btbxea1f3vwot::::res://characters/slime/slime_body_hurt.png<>uid://cai2ijnbypqtr::::res://characters/slime/slime_hurt_eyes.png
+slime_body.png::CompressedTexture2D::8645940357922743702::1695668179::1707144106::1::::<><>::
+slime_body_hurt.png::CompressedTexture2D::3723476765009385039::1695668179::1707144106::1::::<><>::
+slime_face.png::CompressedTexture2D::6595643196702037820::1695668179::1707144106::1::::<><>::
+slime_hurt_eyes.png::CompressedTexture2D::4791010527445338927::1695668179::1707144106::1::::<><>::
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/::1733577224
+icon.png::CompressedTexture2D::7585283561819271012::1549839739::1725368190::1::::<><>::
+README.md::TextFile::-1::1549839739::0::1::::<><>::
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/::1733577225
+overview.PNG::CompressedTexture2D::259986860341851477::1549839739::1725368190::1::::<><>::
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/architect-s-daughter/::1733577224
+Architects Daughter SIL OFL Font License.txt::TextFile::-1::1549839739::0::1::::<><>::
+ArchitectsDaughter32.tres::FontFile::-1::1549839739::0::1::::<><>::res://fonts/architect-s-daughter/ArchitectsDaughter.ttf
+ArchitectsDaughter.ttf::FontFile::8973690263902886203::1549839739::1725368189::1::::<><>::
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/cmu-typewriter/::1733577224
+Typewriter.tres::FontFile::-1::1549839739::0::1::::<><>::res://fonts/cmu-typewriter/Typewriter/cmuntt.ttf
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/cmu-typewriter/Typewriter/::1733577224
+cmunit.ttf::FontFile::4255971282157830327::1549839739::1725368189::1::::<><>::
+cmuntb.ttf::FontFile::8561877993354397182::1549839739::1725368189::1::::<><>::
+cmuntt.ttf::FontFile::2574428306179436935::1549839739::1725368189::1::::<><>::
+cmuntx.ttf::FontFile::3828239447846695758::1549839739::1725368189::1::::<><>::
+OFL-FAQ.txt::TextFile::-1::1549839739::0::1::::<><>::
+OFL.txt::TextFile::-1::1549839739::0::1::::<><>::
+README.txt::TextFile::-1::1549839739::0::1::::<><>::
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/connection/::1733577224
+Connection.otf::FontFile::6345496654864657196::1549839739::1725368189::1::::<><>::
+ConnectionBold.otf::FontFile::7294677927470317949::1549839739::1725368189::1::::<><>::
+SIL Open Font License.txt::TextFile::-1::1549839739::0::1::::<><>::
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/connection_ii/::1733577224
+ConnectionII.otf::FontFile::1684666259824454099::1549839739::1725368189::1::::<><>::
+ConnectionII.tres::FontFile::-1::1549839739::0::1::::<><>::res://fonts/connection_ii/ConnectionII.otf
+SIL Open Font License.txt::TextFile::-1::1549839739::0::1::::<><>::
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/droid-sans/::1733577224
+Apache License.txt::TextFile::-1::1549839739::0::1::::<><>::
+DroidSans-Bold.ttf::FontFile::4719066104797061895::1549839739::1725368190::1::::<><>::
+DroidSans.tres::FontFile::-1::1549839739::0::1::::<><>::res://fonts/droid-sans/DroidSans.ttf
+DroidSans.ttf::FontFile::250068169012125100::1549839739::1725368190::1::::<><>::
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/kirifont/::1733577224
+KiriFont.otf::FontFile::3758360148593398490::1549839739::1725368190::1::::<><>::
+Kirifont.tres::FontFile::-1::1549839739::0::1::::<><>::res://fonts/kirifont/KiriFont.otf
+KiriFont.ttf::FontFile::1990887614238176653::1549839739::1725368190::1::::<><>::
+OFL.txt::TextFile::-1::1549839739::0::1::::<><>::
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/linux-libertine/::1733577224
+LinuxLibertine.tres::FontFile::-1::1549839739::0::1::::<><>::
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/linux-libertine/LinLibertine_5.3.0_2012_07_02/::1733577224
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/linux-libertine/LinLibertine_5.3.0_2012_07_02/LinLibertineOTF_5.3.0_2012_07_02/::1733577224
+Bugs.txt::TextFile::-1::1549839739::0::1::::<><>::
+ChangeLog.txt::TextFile::-1::1549839739::0::1::::<><>::
+GPL.txt::TextFile::-1::1549839739::0::1::::<><>::
+INSTALL.txt::TextFile::-1::1549839739::0::1::::<><>::
+LICENCE.txt::TextFile::-1::1549839739::0::1::::<><>::
+LinLibertine_DR.otf::FontFile::2423076972047956844::0::0::1::::<><>::
+LinLibertine_I.otf::FontFile::5813361527051069559::0::0::1::::<><>::
+LinLibertine_M.otf::FontFile::5265176256073614645::0::0::1::::<><>::
+LinLibertine_R.otf::FontFile::6633024752754044692::0::0::1::::<><>::
+LinLibertine_RB.otf::FontFile::7120999512011524069::0::0::1::::<><>::
+LinLibertine_RBI.otf::FontFile::5530921991271458702::0::0::1::::<><>::
+LinLibertine_RI.otf::FontFile::5160146993891732979::0::0::1::::<><>::
+LinLibertine_RZ.otf::FontFile::2245484152983233810::0::0::1::::<><>::
+LinLibertine_RZI.otf::FontFile::3354062685398199945::0::0::1::::<><>::
+OFL-1.1.txt::TextFile::-1::1549839739::0::1::::<><>::
+Readme-TEX.txt::TextFile::-1::1549839739::0::1::::<><>::
+ToDo.txt::TextFile::-1::1549839739::0::1::::<><>::
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/montreal/::1733577224
+Montreal-Bold.ttf::FontFile::8613985999660640262::1549839739::1725368189::1::::<><>::
+Montreal-Regular.ttf::FontFile::6000724315000645931::1549839739::1725368189::1::::<><>::
+Montreal.tres::FontFile::-1::1549839739::0::1::::<><>::res://fonts/montreal/Montreal-Regular.ttf
+OFL.txt::TextFile::-1::1549839739::0::1::::<><>::
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/poco/::1733577224
+CC BY 4.0.txt::TextFile::-1::1549839739::0::1::::<><>::
+Poco.tres::FontFile::-1::1549839739::0::1::::<><>::res://fonts/poco/Poco.ttf
+Poco.ttf::FontFile::498277093624985516::1549839739::1725368189::1::::<><>::
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/source-code-pro/::1733577224
+SourceCodePro.tres::FontFile::-1::1549839739::0::1::::<><>::res://fonts/source-code-pro/source-code-pro-2.010R-ro-1.030R-it/TTF/SourceCodePro-Regular.ttf
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/source-code-pro/source-code-pro-2.010R-ro-1.030R-it/::1733577224
+LICENSE.txt::TextFile::-1::1549839739::0::1::::<><>::
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/source-code-pro/source-code-pro-2.010R-ro-1.030R-it/TTF/::1733577225
+SourceCodePro-Black.ttf::FontFile::852985802487807032::1549839739::1725368189::1::::<><>::
+SourceCodePro-BlackIt.ttf::FontFile::316865588997365457::1549839739::1725368189::1::::<><>::
+SourceCodePro-Bold.ttf::FontFile::7194229880396689821::1549839739::1725368189::1::::<><>::
+SourceCodePro-BoldIt.ttf::FontFile::4265549495818633886::1549839739::1725368189::1::::<><>::
+SourceCodePro-ExtraLight.ttf::FontFile::4134616776498969024::1549839739::1725368189::1::::<><>::
+SourceCodePro-ExtraLightIt.ttf::FontFile::8155474790981298068::1549839739::1725368189::1::::<><>::
+SourceCodePro-It.ttf::FontFile::4916703354607763491::1549839739::1725368189::1::::<><>::
+SourceCodePro-Light.ttf::FontFile::8296157690255457555::1549839739::1725368189::1::::<><>::
+SourceCodePro-LightIt.ttf::FontFile::5246137504116028167::1549839739::1725368189::1::::<><>::
+SourceCodePro-Medium.ttf::FontFile::6754340934365569329::1549839739::1725368189::1::::<><>::
+SourceCodePro-MediumIt.ttf::FontFile::4650409187890486587::1549839739::1725368189::1::::<><>::
+SourceCodePro-Regular.ttf::FontFile::1112537403954161723::1549839739::1725368189::1::::<><>::
+SourceCodePro-Semibold.ttf::FontFile::4236778446367502760::1549839739::1725368189::1::::<><>::
+SourceCodePro-SemiboldIt.ttf::FontFile::7816020959647519567::1549839739::1725368189::1::::<><>::
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/xolonium/::1733577225
+Xolonium.tres::FontFile::-1::1549839739::0::1::::<><>::res://fonts/xolonium/xolonium-fonts-4.1/ttf/Xolonium-Regular.ttf
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/xolonium/xolonium-fonts-4.1/::1733577225
+FONTLOG.txt::TextFile::-1::1549839739::0::1::::<><>::
+LICENSE.txt::TextFile::-1::1549839739::0::1::::<><>::
+::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/xolonium/xolonium-fonts-4.1/ttf/::1733577225
+Xolonium-Bold.ttf::FontFile::3086216400157979374::1549839739::1725368189::1::::<><>::
+Xolonium-Regular.ttf::FontFile::4762651279591784907::1549839739::1725368189::1::::<><>::
+::res://menu/::1733577225
+2.jpg::CompressedTexture2D::5088088136249649577::1725372604::1725372606::1::::<><>::
+23899350.jpg::CompressedTexture2D::2875676612600898161::1725371316::1725372323::1::::<><>::
+backgrund.jpg::CompressedTexture2D::6044209192598163283::1725372318::1725372324::1::::<><>::
+buttom pressed style.tres::StyleBoxFlat::6884785708693583979::1733577118::0::1::::<><>::
+buttom style.tres::StyleBoxFlat::423960281357449819::1733577118::0::1::::<><>::
+Forest_Landscape.jpg::CompressedTexture2D::6784529164280387509::1725367086::1725367093::1::::<><>::
+lose.gd::GDScript::-1::1733577118::0::1::::<>Control<>::
+lose.tscn::PackedScene::4701841904152531323::1733577131::0::1::::<><>::res://menu/lose.gd<>uid://ceqyck4rufbob::::res://menu/2.jpg<>uid://btstv31s0b6pi::::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/kirifont/KiriFont.otf<>uid://yachbqqbhjg2::::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/connection_ii/ConnectionII.otf<>uid://c5dbodpbg6gp4::::res://menu/buttom pressed style.tres<>res://menu.gd<>uid://gbmtf4h7xkcx::::res://menu/buttom style.tres<>uid://csohyyucqa2s1::::res://sound/bo dead.mp3<>uid://c28cpj6f8px7y::::res://sound/click hoveer.mp3
+los_score.gd::GDScript::-1::1726344067::0::1::::<>Label<>::
+menu.tscn::PackedScene::440414898158698854::1733577131::0::1::::<><>::uid://ceqyck4rufbob::::res://menu/2.jpg<>res://menu.gd<>uid://btstv31s0b6pi::::res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/kirifont/KiriFont.otf<>uid://gbmtf4h7xkcx::::res://menu/buttom style.tres<>uid://c28cpj6f8px7y::::res://sound/click hoveer.mp3<>uid://c5dbodpbg6gp4::::res://menu/buttom pressed style.tres
+pausemenu.gd::GDScript::-1::1731173835::0::1::::<>Control<>::
+pausemenu.gdshader::Shader::-1::1733577193::0::1::::<><>::
+pausemenu.tscn::PackedScene::9110604523327076813::1733577131::0::1::::<><>::res://menu/pausemenu.gd<>res://menu/pausemenu.gdshader<>uid://gbmtf4h7xkcx::::res://menu/buttom style.tres<>uid://c5dbodpbg6gp4::::res://menu/buttom pressed style.tres<>uid://c28cpj6f8px7y::::res://sound/click hoveer.mp3
+pngtree-wooden-game-menu-signage-design-png-image_2891278.jpg::CompressedTexture2D::8543417272109124257::1725366279::1725366281::1::::<><>::
+score2.gd::GDScript::-1::1726586149::0::1::::<>Label<>::
+::res://pauseMenu/::1733577225
+ColorRect.gd::GDScript::-1::1725375750::0::1::::<>ColorRect<>::
+pause_menu.gdshader::Shader::-1::1733577193::0::1::::<><>::
+pause_menu.tscn::PackedScene::4782599263501875536::1725375656::0::1::::<><>::
+::res://pistol/::1733577225
+pistol.png::CompressedTexture2D::6081771334990092076::1695668179::1707144106::1::::<><>::
+projectile.png::CompressedTexture2D::7550039277502144023::1695668179::1707144106::1::::<><>::
+::res://pistol/impact/::1733577225
+circle.png::CompressedTexture2D::8141367643636554889::1695668179::1707144106::1::::<><>::
+impact.gd::GDScript::-1::1695668179::0::1::::<>Node2D<>::
+impact.tscn::PackedScene::706737085132625066::1695668179::0::1::::<><>::res://pistol/impact/impact.gd<>uid://dn80eu1qs371v::::res://pistol/impact/circle.png
+::res://pistol/muzzle_flash/::1733577225
+muzzle_flash.gd::GDScript::-1::1695668179::0::1::::<>Node2D<>::
+muzzle_flash.png::CompressedTexture2D::3592944556550980239::1695668179::1707144106::1::::<><>::
+muzzle_flash.tscn::PackedScene::6601472980654318439::1695668179::0::1::::<><>::res://pistol/muzzle_flash/muzzle_flash.gd<>uid://brgpjilf7s2ul::::res://pistol/muzzle_flash/muzzle_flash.png
+::res://smoke_explosion/::1733577225
+circle_32.png::CompressedTexture2D::6271663262871881894::1695668179::1707144106::1::::<><>::
+smoke_explosion.gd::GDScript::-1::1730644284::0::1::::<>Node2D<>::
+smoke_explosion.gdshader::Shader::-1::1695668179::0::1::::<><>::
+smoke_explosion.tscn::PackedScene::7675803860678853612::1733577131::0::1::::<><>::res://smoke_explosion/smoke_explosion.gdshader<>res://smoke_explosion/smoke_explosion.gd<>uid://bosgpjxuyspsk::::res://sound/slime dies cut.wav
+::res://sound/::1733577225
+bo dead.mp3::AudioStreamMP3::6065611010999480490::1730556349::1730556391::1::::<><>::
+click hoveer.mp3::AudioStreamMP3::6736213353262137116::1730556035::1730556391::1::::<><>::
+clicked.mp3::AudioStreamMP3::7554699690386175829::1730556129::1730556391::1::::<><>::
+gunshot.mp3::AudioStreamMP3::3619381197385050600::1730555672::1730556923::1::::<><>::
+slime dies cut.wav::AudioStreamWAV::3406614892245961466::1730555933::1730556391::1::::<><>::
+slime dies.mp3::AudioStreamMP3::1345768545481451487::1730555765::1730556391::1::::<><>::
+::res://trees/::1733577225
+pine_tree.png::CompressedTexture2D::4806194308614878228::1695668179::1707144106::1::::<><>::

@@ -1,0 +1,118 @@
+[gd_scene load_steps=13 format=3 uid="uid://gjltl2buprh3"]
+
+[ext_resource type="Texture2D" uid="uid://ceqyck4rufbob" path="res://menu/2.jpg" id="1_dukwg"]
+[ext_resource type="Script" path="res://menu.gd" id="1_fb60t"]
+[ext_resource type="FontFile" uid="uid://btstv31s0b6pi" path="res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/kirifont/KiriFont.otf" id="2_1yyvy"]
+[ext_resource type="StyleBox" uid="uid://gbmtf4h7xkcx" path="res://menu/buttom style.tres" id="4_6ubxj"]
+[ext_resource type="AudioStream" uid="uid://c28cpj6f8px7y" path="res://sound/click hoveer.mp3" id="5_o8ju8"]
+[ext_resource type="StyleBox" uid="uid://c5dbodpbg6gp4" path="res://menu/buttom pressed style.tres" id="5_oji2m"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_80fse"]
+bg_color = Color(0.435294, 0.678431, 0.235294, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 30
+border_color = Color(0.317647, 0.47451, 0.121569, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jqs3a"]
+bg_color = Color(0.435294, 0.678431, 0.235294, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 15
+border_color = Color(0.317647, 0.47451, 0.121569, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y6thr"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_exsta"]
+bg_color = Color(0.435294, 0.678431, 0.235294, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 15
+border_color = Color(0.317647, 0.47451, 0.121569, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7yjwf"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xqgtg"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -7.0
+offset_top = -276.0
+offset_right = -7.0
+offset_bottom = -276.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+offset_left = 3.0
+offset_top = 276.0
+offset_right = 1930.0
+offset_bottom = 1356.0
+texture = ExtResource("1_dukwg")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 537.0
+offset_top = 535.0
+offset_right = 1354.0
+offset_bottom = 1083.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_1yyvy")
+theme_override_font_sizes/font_size = 150
+theme_override_styles/normal = SubResource("StyleBoxFlat_80fse")
+theme_override_styles/hover = ExtResource("5_oji2m")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_jqs3a")
+theme_override_styles/focus = SubResource("StyleBoxFlat_y6thr")
+text = "Play"
+script = ExtResource("1_fb60t")
+
+[node name="Options" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_1yyvy")
+theme_override_font_sizes/font_size = 150
+theme_override_styles/normal = ExtResource("4_6ubxj")
+theme_override_styles/hover = ExtResource("5_oji2m")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_exsta")
+theme_override_styles/focus = SubResource("StyleBoxFlat_7yjwf")
+text = "Options"
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_1yyvy")
+theme_override_font_sizes/font_size = 150
+theme_override_styles/normal = ExtResource("4_6ubxj")
+theme_override_styles/hover = ExtResource("5_oji2m")
+theme_override_styles/pressed = ExtResource("5_oji2m")
+theme_override_styles/focus = SubResource("StyleBoxFlat_xqgtg")
+text = "Quit"
+
+[node name="hover" type="AudioStreamPlayer" parent="MarginContainer/VBoxContainer"]
+stream = ExtResource("5_o8ju8")
+bus = &"sfx"
+
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/Play" to="MarginContainer/VBoxContainer/Play" method="_on_mouse_entered"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="MarginContainer/VBoxContainer/Play" method="_on_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Options" to="MarginContainer/VBoxContainer/Play" method="_on_options_pressed"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/Quit" to="MarginContainer/VBoxContainer/Play" method="_on_quit_mouse_entered"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="MarginContainer/VBoxContainer/Play" method="_on_quit_pressed"]

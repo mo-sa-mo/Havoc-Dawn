@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://tf5u1xrnbwy6"
+path="res://.godot/imported/slime dies.mp3-9e708e240f135904ffd91a810717ef13.mp3str"
+
+[deps]
+
+source_file="res://sound/slime dies.mp3"
+dest_files=["res://.godot/imported/slime dies.mp3-9e708e240f135904ffd91a810717ef13.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,117 @@
+[gd_scene load_steps=11 format=3 uid="uid://g05dg7bi86s7"]
+
+[ext_resource type="Texture2D" uid="uid://ceqyck4rufbob" path="res://menu/2.jpg" id="1_a4yuv"]
+[ext_resource type="Script" path="res://options.tres.gd" id="1_pkv2q"]
+[ext_resource type="FontFile" uid="uid://btstv31s0b6pi" path="res://Godot-Fontpack-d244bf6170b399a6d4d26a0d906058ddf2dafdf1/fonts/kirifont/KiriFont.otf" id="2_54va2"]
+[ext_resource type="StyleBox" uid="uid://c5dbodpbg6gp4" path="res://menu/buttom pressed style.tres" id="3_xbutr"]
+[ext_resource type="Script" path="res://volum slider.gd" id="6_2gg0q"]
+[ext_resource type="AudioStream" uid="uid://c28cpj6f8px7y" path="res://sound/click hoveer.mp3" id="6_mqmtf"]
+[ext_resource type="StyleBox" uid="uid://gbmtf4h7xkcx" path="res://menu/buttom style.tres" id="6_qcndg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vg3h0"]
+bg_color = Color(0.435294, 0.678431, 0.235294, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 30
+border_color = Color(0.317647, 0.47451, 0.121569, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_a44l4"]
+bg_color = Color(0.435294, 0.678431, 0.235294, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 15
+border_color = Color(0.317647, 0.47451, 0.121569, 1)
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cjf3q"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[node name="Options" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -7.0
+offset_top = -276.0
+offset_right = -7.0
+offset_bottom = -276.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_pkv2q")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+offset_left = 3.0
+offset_top = 276.0
+offset_right = 1930.0
+offset_bottom = 1356.0
+texture = ExtResource("1_a4yuv")
+
+[node name="back" type="Button" parent="."]
+layout_mode = 2
+offset_left = 691.0
+offset_top = 956.0
+offset_right = 1189.0
+offset_bottom = 1146.0
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("2_54va2")
+theme_override_font_sizes/font_size = 150
+theme_override_styles/normal = SubResource("StyleBoxFlat_vg3h0")
+theme_override_styles/hover = ExtResource("3_xbutr")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_a44l4")
+theme_override_styles/focus = SubResource("StyleBoxFlat_cjf3q")
+text = "back"
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 537.0
+offset_top = 535.0
+offset_right = 1354.0
+offset_bottom = 1083.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="hoverr" type="AudioStreamPlayer" parent="MarginContainer/VBoxContainer"]
+stream = ExtResource("6_mqmtf")
+bus = &"sfx"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+offset_left = 535.0
+offset_top = 514.0
+offset_right = 1352.0
+offset_bottom = 613.0
+theme_override_fonts/font = ExtResource("2_54va2")
+theme_override_font_sizes/font_size = 70
+theme_override_styles/normal = ExtResource("3_xbutr")
+text = "      OPTIONS"
+
+[node name="volum slider" type="HSlider" parent="Label"]
+layout_mode = 0
+offset_left = 127.0
+offset_top = 195.0
+offset_right = 700.0
+offset_bottom = 451.0
+theme_override_styles/slider = ExtResource("6_qcndg")
+max_value = 1.0
+step = 0.001
+value = 1.0
+script = ExtResource("6_2gg0q")
+
+[node name="Label" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = 243.0
+offset_top = 231.0
+offset_right = 592.0
+offset_bottom = 280.0
+theme_override_fonts/font = ExtResource("2_54va2")
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = ExtResource("3_xbutr")
+text = "  Sound Effects  Volume"
+
+[connection signal="mouse_entered" from="back" to="." method="_on_back_mouse_entered"]
+[connection signal="pressed" from="back" to="." method="_on_back_pressed"]
